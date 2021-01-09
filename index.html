@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment</title>
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <section class="content">
+            <div class="col-left">
+
+                <label>Choose A Image :
+                </label>
+                <input type="file" id="input-file">
+                <input type="submit" id="upload-btn" value="Choose File">
+
+                <div class="banner">
+                    <h2 id="dynamic-text">Demo Text</h2>
+                </div>
+
+            </div>
+
+            <div class="col-right">
+
+                <div class="dynamic-input">
+                    <textarea id="input-text" placeholder="Demo Text"></textarea>
+                </div>
+
+                <div id="style">
+                    <h3>Style</h3>
+                    <button class="btn" id="btn1" style="font-family: sans-serif">Default</button>
+                    <button class="btn" id="btn2" style="font-family: cursive">Cursive</button>
+                    <button class="btn" id="btn3" style="font-family: Calibri">Calibri</button>
+                    <button class="btn" id="btn4" style="font-family: Algerian">Algerian</button>
+                    <button class="btn" id="btn5" style="font-family: 'Brush Script MT', cursive">Brush Script</button>
+                    <button class="btn" id="btn6" style="font-family: 'Courier New', monospace">Courier New</button>
+
+                </div>
+
+                <div id="animation">
+                    <h3>Animation</h3>
+                    <button class="btn" id="anm-btn1">None</button>
+                    <button class="btn" id="anm-btn2">Fade Up</button>
+                    <button class="btn" id="anm-btn3">Fade Down</button>
+                    <button class="btn" id="anm-btn4">Zoom</button>
+                    <button class="btn" id="anm-btn5">Flash</button>
+                    <button class="btn" id="anm-btn6">Color</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

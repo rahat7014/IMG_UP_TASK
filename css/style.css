@@ -1,0 +1,174 @@
+/*---------Preset----------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #000000;
+    --color-gray: #212121;
+    --color-light: #ffffff;
+    --color-info: #37A77A;
+    --color-btn :  #2C2C2C;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: var(--color-light);
+}
+
+/* ---------Content----------- */
+
+.content {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---------------Columns-------------- */
+
+.col-left,
+.col-right {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* ---------Left Side ----------- */
+.col-left {
+    background-color: var(--color-dark);
+}
+
+#upload-btn {
+    width: 120px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.banner {
+    position: relative;
+    width: 95%;
+    height: 50vh;
+    margin: 20px auto 0;
+    padding: 10px;
+    border: 1px solid var(--color-light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+/* --------- Right Side ----------- */
+.col-right {
+    background-color: var(--color-gray);
+}
+
+#animation,
+#style {
+    margin-top: 20px;
+
+}
+
+#input-text {
+    width: 100%;
+    margin: auto 0;
+    height: 10vh;
+    font-size: 25px;
+    color: var(--color-dark);
+    padding: 10px;
+    border: none;
+    border-radius: none;
+}
+
+.btn {
+    width: 48%;
+    height: 50px;
+    background-color: var(--color-btn);
+    color: var(--color-light);
+    margin-left: 1%;
+    margin-top: 2%;
+    border: 1px solid var(--color-btn);
+    outline: none;
+    font-family: cursive, sans-serif;
+    font-size: 20px;
+
+}
+
+.active {
+    border: 1px solid var(--color-info);
+}
+@keyframes fadeUp {
+    0% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeDown {
+    0% {
+        margin-top: -20px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        font-size: 40px;
+    }
+
+    100% {
+        font-size: 45px;
+
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
+}
+@keyframes rainbow {
+    0% {
+        color: #000000;
+    }
+
+    25% {
+        color: aqua;
+    }
+
+    50% {
+        color: blueviolet;
+    }
+
+    75% {
+        color: burlywood;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
