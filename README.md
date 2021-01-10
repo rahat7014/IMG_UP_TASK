@@ -1,2 +1,2 @@
-# Assignment
+# Frontend Interview Project
 
